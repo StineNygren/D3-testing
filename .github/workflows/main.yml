@@ -31,7 +31,7 @@ jobs:
       - name: Install Dependencies
         run: npm i
       - name: test index
-        run: node run test
+        run: npm run test
       - name: Replace placeholders with our secret variables
         uses: falnyr/replace-env-vars-action@v1.3.2
         env:
