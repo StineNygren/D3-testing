@@ -22,11 +22,12 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Install Dependencies
-      run: npm i
-    - name: test index
-      run: npm run test
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm i
+      - name: test index
+        run: npm run test
