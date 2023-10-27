@@ -4,7 +4,7 @@ import { testReverse } from "./strings.test.mjs";
 
 function doAllTests() {
   try {
-    testSumAdd(5, 5, 98);
+    testSumAdd(5, 5, 10);
     testValueAdd(1, 5);
     testToEur(50, 43);
     testReverse("hei", "ieh");
